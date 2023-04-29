@@ -4,7 +4,7 @@ import string
 
 def generate_password():
 
-  password_length = random.randint(8, 12)
+  password_length = random.randint(15)
 
   #simbolos = ',.-;:_´ç¨Ç`+^*¡ºª\!"·$%&/()=?¿[]{}'
   
