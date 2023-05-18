@@ -2,13 +2,15 @@ import tkinter as tk
 import random
 import string
 
+#This is a comment!
+
 def generate_password():
 
-  password_length = random.randint(15)
+  password_length = 16
 
-  #simbolos = ',.-;:_´ç¨Ç`+^*¡ºª\!"·$%&/()=?¿[]{}'
+  simbolos = '[]{}()*;/,._-'
   
-  password = ''.join(random.choices(string.ascii_letters + string.digits, k=password_length))
+  password = ''.join(random.choices(string.ascii_letters + string.digits + simbolos, k=password_length))
 
   password_text.delete(1.0, tk.END)
   password_text.insert(1.0, password)
